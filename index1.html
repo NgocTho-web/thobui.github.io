@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bùi Nguyễn Ngọc Thơ | Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-500 selection:text-white">
+
+  <!-- ==================== HEADER / NAVIGATION ==================== -->
+  <header class="sticky top-0 z-50 bg-white/85 backdrop-blur-md border-b border-slate-200/80">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-xl font-bold tracking-tight text-blue-700">TAMMY<span class="text-slate-900"></span></a>
+      <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+        <a href="#about" class="hover:text-blue-600 transition">Về tôi</a>
+        <a href="#skills" class="hover:text-blue-600 transition">Kỹ năng</a>
+        <a href="#achievements" class="hover:text-blue-600 transition">Thành tích</a>
+        <a href="#experience" class="hover:text-blue-600 transition">Kinh nghiệm</a>
+      </nav>
+      <a href="#contact" class="px-4 py-2 text-sm font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition shadow-sm">
+        Liên hệ
+      </a>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section id="about" class="max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col-reverse md:flex-row items-center gap-12">
+    <div class="flex-1 space-y-6">
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 border border-blue-200/70 text-blue-700 rounded-full text-xs font-semibold tracking-wide uppercase shadow-sm">
+        <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+        Sinh viên Hệ thống Thông tin – IUH
+      </div>
+
+      <!-- Tiêu đề mở đầu (đã tối ưu ngắt dòng) -->
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-[1.2] tracking-tight">
+        Xin chào, mình là <br class="hidden sm:inline" />
+        <span class="text-blue-600 inline-block my-2">Bùi Nguyễn Ngọc Thơ</span>
+      </h1>
+
+      <!-- Đoạn mô tả -->
+      <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-xl text-justify sm:text-left">
+        Sinh viên năm 3 đầy nhiệt huyết với niềm đam mê sâu sắc dành cho 
+        <strong class="text-slate-900 font-semibold">Machine Learning</strong> và 
+        <strong class="text-slate-900 font-semibold whitespace-nowrap">Xử lý ngôn ngữ tự nhiên (NLP)</strong>. 
+        Mình luôn chủ động học hỏi, nâng cao kỹ năng lập trình và phân tích dữ liệu để xây dựng các giải pháp Trí tuệ nhân tạo giải quyết bài toán thực tế.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-wrap items-center gap-4 pt-1">
+        <a href="#experience" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl shadow-sm hover:shadow transition-all duration-200">
+          Xem kinh nghiệm làm việc
+        </a>
+        <a href="mailto:ngoctho23092006@gmail.com" class="px-6 py-3 bg-white hover:bg-slate-100 border border-slate-300 text-slate-700 font-medium rounded-xl transition-all duration-200">
+          Gửi Email
+        </a>
+      </div>
+    </div>
+
+    <!-- Ảnh đại diện -->
+    <div class="w-48 h-48 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-white shadow-2xl shadow-blue-500/15 flex-shrink-0">
+      <img src="AnhTheCuaTho.jpg" alt="Bùi Nguyễn Ngọc Thơ" class="w-full h-full object-cover">
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS SECTION ==================== -->
+  <section id="skills" class="bg-white py-16 border-y border-slate-200/80">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Kỹ năng Chuyên môn & Công nghệ</h2>
+        <p class="text-slate-500 text-sm mt-2">Các ngôn ngữ lập trình, hệ quản trị cơ sở dữ liệu và công cụ được trang bị</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm hover:border-blue-200 transition">
+          <h3 class="font-bold text-slate-900 text-lg mb-4 flex items-center gap-2">
+            <span class="text-blue-600">💻</span> Lập trình & Phát triển
+          </h3>
+          <div class="flex flex-wrap gap-2 text-sm">
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-slate-700 font-medium">Python</span>
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-slate-700 font-medium">Java (OOP)</span>
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-slate-700 font-medium">C / C++</span>
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-slate-700 font-medium">HTML / CSS / JS</span>
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-slate-700 font-medium">Git & GitHub</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm hover:border-blue-200 transition">
+          <h3 class="font-bold text-slate-900 text-lg mb-4 flex items-center gap-2">
+            <span class="text-blue-600">📊</span> Dữ liệu & Phân tích
+          </h3>
+          <div class="flex flex-wrap gap-2 text-sm">
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-slate-700 font-medium">MySQL</span>
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-slate-700 font-medium">SQL Server</span>
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-slate-700 font-medium">Power BI</span>
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-slate-700 font-medium">Tableau</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm hover:border-blue-200 transition">
+          <h3 class="font-bold text-slate-900 text-lg mb-4 flex items-center gap-2">
+            <span class="text-blue-600">⚡</span> AI & Kỹ năng bổ trợ
+          </h3>
+          <div class="flex flex-wrap gap-2 text-sm">
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-slate-700 font-medium">ChatGPT / Claude</span>
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-slate-700 font-medium">GitHub Copilot</span>
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-slate-700 font-medium">Tiếng Anh (B1)</span>
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-slate-700 font-medium">Giải quyết vấn đề</span>
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-slate-700 font-medium">Làm việc nhóm</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ACHIEVEMENTS SECTION ==================== -->
+  <section id="achievements" class="py-16 max-w-6xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Thành tích & Chứng chỉ</h2>
+      <p class="text-slate-500 text-sm mt-2">Dấu ấn nổi bật trong quá trình học tập và nghiên cứu</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm flex items-start gap-4">
+        <div class="p-3 bg-amber-50 text-amber-600 rounded-xl text-2xl font-bold flex-shrink-0">🏆</div>
+        <div>
+          <h3 class="font-bold text-slate-900 text-base">Giải Khuyến khích – NCKH Eureka cấp Trường</h3>
+          <p class="text-sm text-slate-600 mt-1">Đạt thành tích trong phong trào nghiên cứu khoa học sinh viên tại Trường Đại học Công nghiệp TP.HCM.</p>
+        </div>
+      </div>
+
+      <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm flex items-start gap-4">
+        <div class="p-3 bg-emerald-50 text-emerald-600 rounded-xl text-2xl font-bold flex-shrink-0">🌱</div>
+        <div>
+          <h3 class="font-bold text-slate-900 text-base">Top 30 Cuộc thi Sáng tạo INNOGREENLIFE</h3>
+          <p class="text-sm text-slate-600 mt-1">Xuất sắc được lựa chọn vào Top 30 nhóm dự thi tiêu biểu trong tổng số hơn 100 đội tham gia.</p>
+        </div>
+      </div>
+
+      <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm col-span-1 md:col-span-2">
+        <h3 class="font-bold text-slate-900 mb-3 text-base flex items-center gap-2">
+          <span>📜</span> Chứng chỉ Khóa học Đã hoàn thành (CodeLearn)
+        </h3>
+        <ul class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm text-slate-600">
+          <li class="p-3 bg-slate-50 rounded-xl border border-slate-100 flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span> Java OOP Certificate
+          </li>
+          <li class="p-3 bg-slate-50 rounded-xl border border-slate-100 flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span> Python Advanced Certificate
+          </li>
+          <li class="p-3 bg-slate-50 rounded-xl border border-slate-100 flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span> Instant Game with Scratch Certificate
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE SECTION ==================== -->
+  <section id="experience" class="py-16 bg-white border-t border-slate-200/80">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Kinh nghiệm làm việc</h2>
+        <p class="text-slate-500 text-sm mt-2">Hành trình tích lũy kỹ năng thực tế và trải nghiệm môi trường làm việc</p>
+      </div>
+
+      <!-- Timeline Container -->
+      <div class="relative border-l-2 border-blue-500 ml-4 md:ml-32 space-y-10">
+
+        <!-- Item 1: Freelance Editor -->
+        <div class="relative pl-8 md:pl-10 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow"></div>
+          <span class="md:absolute md:-left-36 md:top-1 text-xs md:text-sm font-semibold text-blue-600 tracking-wide uppercase block mb-1 md:mb-0">
+            04/2026 – Nay
+          </span>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <h3 class="text-base font-bold text-slate-900">Freelance Editor</h3>
+              <span class="text-xs px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-700 font-medium">Online</span>
+            </div>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Biên tập và chỉnh sửa nội dung, tối ưu câu chữ và hình ảnh, đảm bảo tính mạch lạc, sáng tạo và độ chính xác của tài liệu/ấn phẩm.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 2: Cashier - Phuc Long -->
+        <div class="relative pl-8 md:pl-10 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-300 group-hover:bg-blue-600 border-4 border-white shadow transition"></div>
+          <span class="md:absolute md:-left-36 md:top-1 text-xs md:text-sm font-semibold text-slate-500 tracking-wide uppercase block mb-1 md:mb-0">
+            02/2026
+          </span>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <h3 class="text-base font-bold text-slate-900">Cashier (Nhân viên thu ngân)</h3>
+              <span class="text-xs px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-700 font-medium">Phúc Long Coffee & Tea</span>
+            </div>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Thực hiện thanh toán chính xác, kiểm soát dòng tiền ca làm việc; rèn luyện khả năng giao tiếp, chăm sóc khách hàng và giải quyết tình huống nhanh trong môi trường dịch vụ áp lực cao.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 3: Sales Marketing Intern -->
+        <div class="relative pl-8 md:pl-10 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-300 group-hover:bg-blue-600 border-4 border-white shadow transition"></div>
+          <span class="md:absolute md:-left-36 md:top-1 text-xs md:text-sm font-semibold text-slate-500 tracking-wide uppercase block mb-1 md:mb-0">
+            08/2025 – 09/2025
+          </span>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <h3 class="text-base font-bold text-slate-900">Sales Marketing Intern</h3>
+              <span class="text-xs px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-700 font-medium">Toan Thien Express</span>
+            </div>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Hỗ trợ triển khai các hoạt động tiếp thị dịch vụ vận chuyển, tìm kiếm khách hàng tiềm năng, theo dõi dữ liệu bán hàng và rèn luyện kỹ năng làm việc nhóm.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 4: Book Sales Collaborator -->
+        <div class="relative pl-8 md:pl-10 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-300 group-hover:bg-blue-600 border-4 border-white shadow transition"></div>
+          <span class="md:absolute md:-left-36 md:top-1 text-xs md:text-sm font-semibold text-slate-500 tracking-wide uppercase block mb-1 md:mb-0">
+            06/2025
+          </span>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <h3 class="text-base font-bold text-slate-900">Cộng tác viên Bán sách Online</h3>
+              <span class="text-xs px-2.5 py-0.5 rounded-full bg-purple-100 text-purple-700 font-medium">Online</span>
+            </div>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Tư vấn đầu sách phù hợp theo nhu cầu bạn đọc, quản lý đơn hàng trực tuyến và hỗ trợ giải đáp thắc mắc của khách hàng qua mạng xã hội.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER / CONTACT ==================== -->
+  <footer id="contact" class="bg-slate-900 text-white py-14">
+    <div class="max-w-6xl mx-auto px-6 text-center space-y-4">
+      <h2 class="text-2xl font-bold tracking-tight">Kết nối với mình</h2>
+      <p class="text-slate-400 max-w-md mx-auto text-sm">
+        Sẵn sàng trao đổi về dự án AI, cơ hội thực tập hoặc hợp tác phát triển</p>
+      
+      <div class="text-sm text-slate-300 space-y-1.5 pt-2">
+        <p>📧 Email: <a href="mailto:ngoctho23092006@gmail.com" class="text-blue-400 hover:underline">ngoctho23092006@gmail.com</a></p>
+        <p>📱 SĐT: 0902 361 411</p>
+        <p>📍 Địa chỉ: 95/77/6A Lê Văn Lương, P. Tân Hưng, Q.7, TP. Hồ Chí Minh</p>
+      </div>
+
+      <div class="border-t border-slate-800 mt-8 pt-6">
+        <p class="text-xs text-slate-500">© 2026 TAMMY Designed for Portfolio.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
